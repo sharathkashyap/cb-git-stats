@@ -368,7 +368,7 @@ class MonthlyContributorAnalyzer:
             print(f"{'Rank':<5} {'Username':<20} {'Name':<25} {'Commits':<8} {'Repos':<6} {'Days':<5} {'Company':<15}")
             print("-"*100)
             
-            for contributor in contributors[:50]:
+            for contributor in contributors[:20]:
                 rank = contributor.get("rank", 0)
                 username = contributor.get("username", "")[:19]
                 name = (contributor.get("name") or "")[:24]
